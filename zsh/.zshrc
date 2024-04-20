@@ -87,3 +87,4 @@ _fzf_comprun() {
 # ---- Eza (better ls) -----
 
 alias ls="eza --color=always --long --git --icons=always"
+eval "$(zoxide init zsh)"

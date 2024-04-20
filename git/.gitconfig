@@ -1,0 +1,9 @@
+[user]
+	name = Teemu Siikaniemi
+	email = teemu.siikaniemi@gmail.com
+[init]
+	defaultBranch = main
+[core]
+  editor = nvim
+[pull]
+  rebase = true
