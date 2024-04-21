@@ -39,8 +39,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# CodeWhisperer post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
 
 if [ -n $VIRTUAL_ENV ]; then
 source “$VIRTUAL_ENV/bin/activate” &> /dev/null
@@ -87,4 +85,9 @@ _fzf_comprun() {
 # ---- Eza (better ls) -----
 
 alias ls="eza --color=always --long --git --icons=always"
+#
+# ---- Zoxide -----
 eval "$(zoxide init zsh)"
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
